@@ -361,9 +361,8 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
-/PersonalSite/appsettings.json
 
 # Ditch the Archive
-/PersonalSite/_Archive
-b
+/PersonalSite/Archive
+
 /PersonalSite/appsettings.json

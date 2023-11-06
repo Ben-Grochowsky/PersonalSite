@@ -1,0 +1,63 @@
+p.aboutClass {
+    font-size: 1.25em;
+}
+
+.picCenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.classmatePhoto {
+    width: 40%;
+    height: 50%;
+}
+
+.classmateCard{
+    margin-right: 4em;
+    margin-left: 4.5em;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    padding-top: 1em;
+}
+
+.center {
+    width: 50%;
+    margin: auto;
+}
+
+.projectCard{
+    margin-right: 4em;
+    margin-left: 4.5em;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    padding-top: 1em;
+    padding-right: 1em;
+    padding-left: 1em
+}
+
+.linkedInButton {
+    width: 4em;
+    height: auto;
+}
+
+.formBox {
+    position: relative;
+    margin:0;
+    padding: 0;
+    width: 100%;
+    min-width: 100%;
+}
+
+.subject {
+    margin-top: 1em;
+}
+
+.image-wrapper{
+    max-height: 262px;
+    overflow: hidden;
+}
+
+.image-wrapper img{
+    width: 262px;
+}
