@@ -1,0 +1,90 @@
+﻿@model PersonalSite.Models.ContactViewModel
+
+@{
+    ViewData["Title"] = "Title";
+}
+
+@* <!-- Contact Start -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 text-center">
+            <h4>Name</h4>
+        </div>
+        <div class="col-lg-6 text-center">
+            <h4>Email Address</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-lg-6">
+            <input class="form-control" type="text" name="name" placeholder="Name" required>
+        </div>
+        <div class="form-group col-lg-6">
+            <input class="form-control" type="text" name="emailAddress" placeholder="Email Address" required>
+        </div>
+    </div>
+    <div class="row text-center subject">
+        <h4>Subject</h4>
+    </div>
+    <div class="row">
+        <div class="form-group">
+            <input class="form-control" type="text" name="subject" placeholder="Subject" required>
+        </div>
+    </div>
+    <div class="row text-center subject">
+        <h4>Content</h4>
+    </div>
+    <div class="row">
+        <div class="form-group">
+            <textarea class="form-control" name="content" placeholder="Content of the Email" id="content" rows="6" required></textarea>
+        </div>
+    </div>
+    <div class="row center">
+        <input type="submit" class="btn btn-danger m-3 py-3 " value="Send Email">
+    </div>
+</div>
+<!-- Contact End --> *@
+
+
+
+
+<div class="container">
+    <div class="row mb-4">
+        <form asp-action="Contact">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <h4 class="text-center">Name</h4>
+            <div class="form-floating">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <div class="text-danger text-center mb-3">
+                    <span asp-validation-for="Name"></span>
+                </div>
+            </div>
+            <h4 class="text-center">Email Address</h4>
+            <div class="form-floating">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <div class="text-danger text-center mb-3">
+                    <span asp-validation-for="Email"></span>
+                </div>
+            </div><h4 class="text-center">Subject</h4>
+            <div class="form-floating">
+                <label asp-for="Subject" class="control-label"></label>
+                <input asp-for="Subject" class="form-control" />
+                <div class="text-danger text-center mb-3">
+                    <span asp-validation-for="Subject"></span>
+                </div>
+            </div>
+            <h4 class="text-center">Message</h4>
+            <div class="form-floating">
+                <label asp-for="Message" class="control-label"></label>
+                <textarea asp-for="Message" class="form-control"></textarea>
+                <div class="text-danger text-center mb-3">
+                    <span asp-validation-for="Message"></span>
+                </div>
+            </div>
+            <div class="form-floating text-center">
+                <input type="submit" value="Submit" class="btn btn-danger btn-lg w-100 text-center d-inline-block" />
+            </div>
+        </form>
+    </div>
+</div>
