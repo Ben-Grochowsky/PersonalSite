@@ -32,6 +32,9 @@
 
     <!-- Template Stylesheet -->
     <link href="~/css/style.css" rel="stylesheet">
+
+    <!-- Custom css Stylesheet -->
+    <link href="~/css/custom.css" rel="stylesheet">
 </head>
 
 <body>
@@ -71,7 +74,7 @@
                 <a asp-action="Index" asp-controller="Home" class="nav-item nav-link active">Home</a>
                 <a asp-action="Projects" asp-controller="Home" class="nav-item nav-link">Projects</a>
                 <a asp-action="Classmates" asp-controller="Home" class="nav-item nav-link">Classmates</a>
-                <a href="resume.html" class="nav-item nav-link">Resume</a>
+                <a asp-action="Resume" asp-controller="Home" class="nav-item nav-link">Resume</a>
                 <a asp-action="Contact" asp-controller="Home" class="nav-item nav-link">Contact</a>
             </div>
         </div>

@@ -91,5 +91,10 @@ namespace PersonalSite.Controllers
 
             return View("EmailConfirmation", cvm);
         }
+
+        public IActionResult Resume()
+        {
+            return View();
+        }
     }
 }
