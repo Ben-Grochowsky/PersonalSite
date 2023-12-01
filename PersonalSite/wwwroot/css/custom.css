@@ -61,3 +61,7 @@ p.aboutClass {
 .image-wrapper img{
     width: 262px;
 }
+
+.resume-title {
+    font-size: 3.75em;
+}
