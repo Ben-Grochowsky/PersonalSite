@@ -65,3 +65,7 @@ p.aboutClass {
 .resume-title {
     font-size: 3.75em;
 }
+.label-center {
+    display: block;
+    text-align: center;
+}

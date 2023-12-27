@@ -55,10 +55,10 @@ namespace PersonalSite.Controllers
         {
             if (!ModelState.IsValid)
             {
-                return View();
+                return View(cvm);
             }
 
-            string message = $"You have received an email from {cvm.Name} (reply to: {cvm.Email}).\n* Subject: {cvm.Subject}\n* Mesage: \n{cvm.Message}";
+            string message = $"You have received an email from {cvm.Name} (reply to: {cvm.Email}).\n* Subject: {cvm.Subject}\n* Message: \n{cvm.Message}";
             var mm = new MimeMessage();
             mm.From.Add(new MailboxAddress("No Reply", _config.GetValue<string>("Credentials:Email:User")));
             mm.To.Add(new MailboxAddress("You", _config.GetValue<string>("Credentials:Email:Recipient")));
